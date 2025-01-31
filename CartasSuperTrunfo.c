@@ -6,7 +6,9 @@
    char codigo [15];
    float populacao;
    float area;
+   float Densidade Populacional;
    double PIB;
+   float PIB per Capita; 
    int pontos_turisticos;
   
   //ENTRADA DE DADOS 
@@ -25,15 +27,27 @@
   printf("Digite o numero de area(em Km²): \n" );
   scanf("%f", &area);
   
+  printf("Digite densidade populacional (pesoas/km²): \n");
+  scanf("%f", &Densidade Populacional);
+
+
   while(getchar() != '\n');
 
    printf("Digite o PIB do estado: \n" );
    scanf("%Lf" , &PIB);
- 
+
+  printf ("Digite PIB per Capita: \n");
+  scanf("%f", &PIB per Capita);
+
+
  while(getchar() != '\n');
 
   printf ("Digite o numero de pontos turisticos: \n");
   scanf("%d", &pontos_turisticos);
+
+  //calculo da dencide populacional 
+
+  Densidade Populacional= Densidade Populacional/ area
 
   // SAIDA DE DADOS 
 
@@ -44,6 +58,8 @@
   printf("area: %2.f Km² \n", area);
   printf ("PIB :%.2Lf\n", PIB);
   printf("pontos_turisticos: %d\n", pontos_turisticos);
+  printf("Densidade Populacional: %.5f pesoas/km²",Densidade Populacional )
+
 
 
    return 0;
